@@ -1,271 +1,865 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harvard-MACI Internship</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://es.m.wikipedia.org/wiki/Archivo:Escudo_de_la_Universidad_de_Concepci%C3%B3n.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+     
+      <img src="./assets/images/hvlog.png" class="hv" alt="hv" >
+      
+
+      <nav class="navbar" data-navbar>
+
+        <div class="wrapper">
+          <a href="#" class="logo">Harvard-MACI</a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#team" class="navbar-link" data-nav-link>Team</a>
+          </li>
+
+          
+          <li class="navbar-item">
+            <a href="#classes" class="navbar-link" data-nav-link>Classes</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#workshops" class="navbar-link" data-nav-link>Workshops</a>
+          </li>
+           <li class="navbar-item">
+            <a href="#location" class="navbar-link" data-nav-link>Location</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <img src="./assets/images/maci_logo.png" class="maci" alt="maci" >
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+
+      <section class="section hero" id="home" aria-label="hero">
+        
+        <div class="container">
+
+
+          <div class="hero-content">
+
+
+            <h1 class="h1 hero-title">
+              Harvard IACS <span class="has-before">Internship</span> 2024
+            </h1>
+
+            <p class="hero-text text-container-ex">This one-week data science program includes theoretical classes, practical workshops, talks, and company visits. Experience top-tier education and real-world application at one of the world's leading institutions.
+            </p>
+
+            <div class="container">
+              <a href="#" class="btn btn-primary has-before has-after">Schedule 🗓️</a>
+
+             <!-- <button class="hero-btn" aria-label="pixology promo">
+                <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
+
+                <span class="span">Behind the scenes</span>
+              </button> -->
+            </div>
+            <div class="container">
+            <ul class="social-list">
+
+              <li>
+                <a href="https://www.facebook.com/cdia.udec" class="social-link" style="--color: hsl(241, 77%, 63%);">
+                  <ion-icon name="logo-facebook"></ion-icon>
+
+                  <span class="span">Facebook</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.instagram.com/cdia.udec" class="social-link" style="--color: hsl(310, 100%, 50%);">
+                  <ion-icon name="logo-instagram"></ion-icon>
+
+                  <span class="span">Instagram</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://www.linkedin.com/company/cdia-udec/posts/?feedView=all" class="social-link" style="--color: hsl(203, 89%, 53%);">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+
+                  <span class="span">Linkedin</span>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <div   id="team"   class=" container section container-team">
+        <div   class=" container">
+          <h2 class="h2 section-title text-center">Meet the <span class="has-before">team</span></h2>
+        <div class="responsive-container-block">
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <a class="card"  href="https://seas.harvard.edu/person/pavlos-protopapas">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="./assets/images/pavlos.jpg">
+              </div>
+              <p class="text-blk name">
+                Pavlos Protopapas
+              </p>
+              <p class="text-blk position">
+              </p>
+              <p class="text-blk feature-text">
+                Scientific Director of the Institute for Applied Computational Science
+              </p>
+            </a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <a class="card" href="https://fi.udec.cl/academicos/guillermo-cabrera-v/">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="./assets/images/guille.jpg">
+              </div>
+              <p class="text-blk name">
+                Guillermo Cabrera
+              </p>
+              <p class="text-blk position">
+              </p>
+              <p class="text-blk feature-text">
+                Founder and Director of the Artificial Intelligence Data Center, University of Concepción
+              </p>
+ 
+            </a>
+          </div>
+  
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <a class="card" href="https://fi.udec.cl/academicos/jose-sebastian-fuentes-s/" style="--color: 241, 88%, 63%">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="./assets/images/pepe.png">
+              </div>
+              <p class="text-blk name">
+                José Fuentes
+              </p>
+              <p class="text-blk position">
+              </p>
+              <p class="text-blk feature-text">
+                Director of the MSc. in Data Science for Innovation, University of Concepción
+              </p>
+              
+            </a>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <a class="card" href="https://fi.udec.cl/academicos/guillermo-cabrera-v/">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="./assets/images/mati_r.jpeg">
+              </div>
+              <p class="text-blk name">
+               Matías Rodriguez
+              </p>
+              <p class="text-blk position">
+              </p>
+              <p class="text-blk feature-text">
+                Ask matias *
+              </p>
+ 
+            </a>
+          </div>
+         
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="./assets/images/yo.jpg">
+              </div>
+              <p class="text-blk name">
+                Martina Cádiz
+                </p>
+              <p class="text-blk feature-text">
+                Computer Science Engineer
+              </p>
+              
+            </div>
+          </div>
+          <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
+            <div class="card">
+              <div class="team-image-wrapper">
+                <img class="team-member-image" src="./assets/images/DANI.jpg">
+              </div>
+              <p class="text-blk name">
+                 Daniel Moreno
+              </p>
+              <p class="text-blk feature-text">
+                Industrial Engineer
+                
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>IACS Internship</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<script src="https://kit.fontawesome.com/202a8c4575.js" crossorigin="anonymous"></script>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo">
-							<img src="images/logo_iacs_maci.png" alt="" />
-							<!-- <img src="images/maci_logo.png" alt="" width="200" height="100"/> -->
-						</span>
-						<h1>Harvard IACS internship 2022 </h1>
-						<p> Classes & Workshops <br />
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Team</a></li>
-							<li><a href="#second">Courses</a></li>
-							<li><a href="#thrid">Workshops</a></li>
-							<li><a href="#cta">John Paulson Building</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>Welcome</h2>
-										</header>
-										<p> In this internship you will learn fundamental topics in data science.
-										We provide a one-week program combining classes and workshops. The classes are focused on
-										theoritical concepts and general activities, while the workshop are practical instances
-										where the material of the classes can be applied.
-										</p>
-										<p>
-										Classes and workshops are part of other activities, such as, talks and company visits.
-										Press the button below to see the entire program:
-										</p>
-										<ul class="actions">
-											<li><a href="generic.html" class="button primary">Internship schedule</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/harvard_logo.png" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Team</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="image"><img src="images/pavlosimage.jpeg" alt=""
-											                       width="200" height="250"/></span>
-										<h3><strong>Pavlos Protopapas</strong></h3>
-										<h4>Lecturer</h4>
-										<p>Scientific Director of the Institute for Applied Computational Science (IACS).</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/cathy_image.jpg" alt=""
-																			       width="200" height="250"/></span>
-										<h3><strong>Cathy Chute</strong></h3>
-										<p> Executive Director of the Institute for Applied Computational Science .</p>
-									</li>
-								</ul>
-								<ul class="features">
-									<li>
-										<span class="image"><img src="images/jackie_image.jpeg" alt=""
-																						 width="200" height="230"/></span>
-										<h3><strong>Jackie Strom</strong></h3>
-										<p> Administrative coordinator of the Institute for Applied Computational Science .</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/cris_image.png" alt=""
-																						 width="180" height="230"/></span>
-										<h3><strong>Cristobal Donoso</strong></h3>
-										<h4>Teaching assistant</h4>
-										<p>Researcher at IACS.</p>
-									</li>
-								</ul>
-
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Classes</h2>
-								</header>
-
-								<ul class="statistics">
-									<li class="style1">
-
-											<i class="icon fa-solid fa-1"></i>
-										  <strong>Intro. to Data and Machine Learning</strong>
-
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_1a.pdf">
-											<strong>Part A</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_1b.pdf">
-											<strong>Part B</strong>
-										</a>
-									</li>
-									<li class="style2">
-											<i class="icon fa-solid fa-2"></i>
-											<strong>Visualization and Exploratory Data Analysis (EDA)</strong>
-											<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_2a.pdf">
-												<strong>Part A</strong>
-											</a>
-											<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_2b.pdf">
-												<strong>Part B</strong>
-											</a>
-									</li>
-									<li class="style1">
-											<i class="icon fa-solid fa-3"></i>
-											<strong>Intro. to Regression</strong>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_3a.pdf">
-											<strong>Part A</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_3b.pdf">
-											<strong>Part B</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_3c.pdf">
-											<strong>Part C</strong>
-										</a>
-									</li>
-								</ul>
 
 
-								<ul class="statistics">
-									<li class="style1">
-										<i class="icon fa-solid fa-4"></i>
-										<strong>Classification</strong>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_4a.pdf">
-											<strong>Part A</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_4b.pdf">
-											<strong>Part B</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_4c.pdf">
-											<strong>Part C</strong>
-										</a>
-									</li>
-									<li class="style2">
-										<i class="icon fa-solid fa-5"></i>
-										<strong>Trees</strong>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_5a.pdf">
-											<strong>Part A</strong>
-									  </a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_5b.pdf">
-											<strong>Part B</strong>
-									  </a>
-									</li>
-									<li class="style2">
-											<i class="icon fa-solid fa-6"></i>
-											<strong>Neural Networks</strong>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_6a.pdf">
-											<strong>Part A</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_6b.pdf">
-											<strong>Part B</strong>
-										</a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/classes/class_6c.pdf">
-											<strong>Part C</strong>
-										</a>
-									</li>
-								</ul>
-							</section>
+      <section class="section service" aria-label="team">
+        <div class="container">
 
-							<!-- WORKSHOPS -->
-							<section id="thrid" class="main special">
-								<header class="major">
-									<h2>Workshops</h2>
-								</header>
+          <h2 class="h2 section-title text-center">Meet the <span class="has-before">team</span></h2>
 
-								<ul class="statistics">
-									<li class="style1">
-										<i class="icon fa-solid fa-1"></i>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/1.1.pandas.ipynb">
-										  <strong>Pandas</strong>
-									  </a>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/1.2.visualization.ipynb">
-										  <strong>Matplotlib</strong>
-									  </a>
+          <ul class="grid-list">
 
-									</li>
-									<li class="style2">
-										<i class="icon fa-solid fa-2"></i>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/2.sklearn_regression.ipynb">
-											<strong>Regression (Sklearn)</strong>
-										</a>
-									</li>
-									<li class="style3">
-										<i class="icon fa-solid fa-3"></i>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/3.web_scaprring.ipynb">
-											<strong>Web Sraping</strong>
-									  </a>
-									</li>
-									<li class="style4">
-										<i class="icon fa-solid fa-4"></i>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/4.classification.ipynb">
-											<strong>Classification</strong>
-										</a>
-									</li>
-									<li class="style5">
-										<i class="icon fa-solid fa-5"></i>
-										<a href="https://github.com/iacsmaci/workshops/blob/maci/5.optuna.ipynb">
-										<strong>Optuna</strong>
-											</a>
-									</li>
-								</ul>
+            <li>
+              <div class="service-card" style="--color: 348, 83%, 47%">
 
-							</section>
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Location</h2>
-									<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.030106844875!2d-71.12948948423502!3d42.36319764289546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e379d8b38dcb63%3A0xeec84922bf2e0b45!2s150%20Western%20Ave%2C%20Boston%2C%20MA%2002134!5e0!3m2!1ses!2sus!4v1655473548480!5m2!1ses!2sus"
-									width="600" height="450"
-									style="border:0;"
-									allowfullscreen=""
-									loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade">
-									</iframe>
-							</section>
+                <div class="card-icon">
+                  <img src="./assets/images/guille.jpg" width="200" height="200" loading="lazy"
+                    alt="service icon">
+                </div>
 
-					</div>
+                <h3 class="h3">
+                  <a href="#" class=" text-center">Guillermo Cabrera</a>
+                  <p class="section-subtitle  text-center"   >Lecturer</p>
+                  <p class="section-subtitle  text-center"> Scientific Director of the Institute for Applied Computational Science (IACS)</p>
+                </h3>
 
-				<!-- Footer -->
-					<footer id="footer">
+              </div>
+            </li>
 
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
+            <li>
+              <div class="service-card" style="--color: 241, 88%, 63%">
 
-			</div>
+                <div class="card-icon">
+                  <img src="./assets/images/pavlos.jpg" width="200" height="200" loading="lazy"
+                    alt="service icon">
+                </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <h3 class="h3">
+                  <a href="#" class="card-title">Pavlos Protopapas</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 17, 100%, 68%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/pepe.png" width="200" height="200" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">José Fuentes</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 343, 98%, 60%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/DANI.jpg" width="100" height="100" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Daniel Moreno</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="team-content" style="--color: 210, 100%, 53%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-5.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Matías Rodriguez</a>
+                </h3>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card" style="--color: 157, 89%, 44%">
+
+                <div class="card-icon">
+                  <img src="./assets/images/service-icon-6.png" width="30" height="30" loading="lazy"
+                    alt="service icon">
+                </div>
+
+                <h3 class="h3">
+                  <a href="#" class="card-title">Martina Cádiz</a>
+                </h3>
+
+              </div>
+            </li>
+    
+
+          </ul>
+
+        </div>
+      </section>
+
+ --> 
+ <section class="section project" id="classes" aria-label="classes">
+  <div class="container">
+
+    <p class="section-subtitle text-center has-before">Classes</p>
+    <h2 class="h2 section-title text-center">
+       Here you will find the <span class="has-before">lectures</span>
+    </h2>
+
+    
+    <ul class="grid-list">
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+            <img src="./assets/images/engineering.jpg" width="1000" height="1000" loading="lazy" alt="class1"
+              class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h3">
+              <a href="#" class="card-title">Introduction to Data Science and Machine Learning</a>
+            </h3>
+
+            <a href="#" class="card-tag">Class 1</a>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 835; --height: 429;">
+            <img src="./assets/images/building.jpg" width="1000" height="1000" loading="lazy" alt="Graphic Design"
+              class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h3">
+              <a href="#" class="card-title">Visualization and Exploratory Data Analysis (EDA)</a>
+            </h3>
+
+            <a href="#" class="card-tag">Class 2</a>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 1600; --height: 500;">
+            <img src="./assets/images/harvard_1.jpg" width="500" height="1000" loading="lazy" alt="3d Digital Art"
+              class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h3">
+              <a href="#" class="card-title">Intro. to Regression</a>
+            </h3>
+
+            <a href="#" class="card-tag">Class 3</a>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 500; --height: 500;">
+            <img src="./assets/images/comedor.jpg" width="200" height="200" loading="lazy" alt="Web Design"
+              class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h3">
+              <a href="#" class="card-title">Trees</a>
+            </h3>
+
+            <a href="#" class="card-tag">Class 4</a>
+          </div>
+
+        </div>
+      </li>
+
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 1200; --height: 700;">
+            <img src="./assets/images/estatua.jpg" width="1000" height="1000" loading="lazy"
+              alt="Mobile App Design" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h3">
+              <a href="#" class="card-title">Classification</a>
+            </h3>
+
+            <a href="#" class="card-tag">Class 5</a>
+          </div>
+
+        </div>
+      </li>
+      <li>
+        <div class="project-card">
+
+          <figure class="card-banner img-holder" style="--width: 835; --height: 490;">
+            <img src="./assets/images/revere.jpg" width="216" height="229" loading="lazy"
+              alt="Mobile App Design" class="img-cover">
+          </figure>
+
+          <div class="card-content">
+            <h3 class="h3">
+              <a href="#" class="card-title">Neural Networks</a>
+            </h3>
+
+            <a href="#" class="card-tag">Class 6</a>
+          </div>
+
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
 
 
-	</body>
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section container feature-content" id="workshops" aria-label="feature">
+        <div class="container">
+          
+          <p class="section-subtitle has-before text-center">Let's program fun stuff 💻</p>
+          <h2 class="h2 text-center section-title">
+             <span class="has-before">Workshops</span>
+          </h2>
+          <div class="button-container">
+            <div class="button-group">
+                <button class="workshop-button  has-before has-after " onmouseover="showDescription(this)">Monday 06/10 📊</button>
+                <div class="description"> Data management and visualization with pandas, spark, and polars libraries</div>
+            </div>
+    
+            <div class="button-group">
+                <button class="workshop-button  has-before " onmouseover="showDescription(this)">Tuesday 06/11 📈</button>
+                <div class="description">Regression and time series</div>
+            </div>
+    
+            <div class="button-group">
+                <button class="workshop-button " onmouseover="showDescription(this)">Wednesday 06/12 🎥</button>
+                <div class="description">Classification</div>
+            </div>
+    
+            <div class="button-group">
+                <button class="workshop-button" onmouseover="showDescription(this)">Thrusday 06/13 🛠️</button>
+                <div class="description">Data versioning and MLFlow</div>
+            </div>
+    
+            <div class="button-group">
+                <button class="workshop-button" onmouseover="showDescription(this)">Friday 06/14 🤖</button>
+                <div class="description">Deep Learning: TensorFlow and creating a chatbot</div>
+            </div>
+        </div>
+      </section>
+        <!-- 
+          <div class="feature-content">
+
+           
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 174, 77%, 50%">
+                    <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Fast working process</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="people-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Didicated team</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="people-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Didicated team</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 241, 77%, 63%;">
+                    <ion-icon name="people-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">Didicated team</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon" style="--color: 343, 98%, 60%;">
+                    <ion-icon name="headset-sharp" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="h3 card-title">24/7 hours support</h3>
+
+                    <p class="card-text">
+                      At Pixology we specialize in designing, building, shipping and scaling beautifu.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>-->
+
+   
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+   
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+     
+
+      <section class="section newsletter has-bg-image" aria-label="newsletter"
+        style="background-image: url('./assets/images/newsletter-bg.jpg')">
+        <div class="container">
+
+          <figure class="newsletter-banner">
+            <img src="./assets/images/newsletter-banner.png" width="355" height="356" loading="lazy"
+              alt="newsletter banner" class="w-100">
+          </figure>
+
+          <div class="newsletter-content">
+
+            <p class="section-subtitle has-before">Get every update</p>
+
+            <h2 class="h2 section-title">Subscribe newslater get latest updates and deals</h2>
+
+            <form action="" class="newsletter-form">
+              <input type="email" name="email_address" placeholder="Enter your mail" required class="email-field">
+
+              <button type="submit" class="btn btn-secondary has-before has-after">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="arrow-forward" aria-hidden="true"></ion-icon>
+              </button>
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+ 
+        - #BLOG
+      -->
+
+      <section class="section blog " id="location" aria-label="blog">
+        <div class="container">
+
+          <p class="section-subtitle text-center has-before">Harvard John A. Paulson School of Engineering and Applied Sciences</p>
+
+          <h2 class="h2 section-title text-center">
+            Building <span class="has-before"> location</span>
+          </h2>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card large">
+                <div class="wrapper">
+                  <a href="#" class="tag">Where to find us</a>
+                </div>
+                <div class="map-div card-banner"> 
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0251858324514!2d-71.13080576062201!3d42.363302518513805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37741111a2a01%3A0x69c2a968586f826c!2sHarvard%20John%20A.%20Paulson%20School%20Of%20Engineering%20And%20Applied%20Sciences!5e0!3m2!1ses!2scl!4v1716474845618!5m2!1ses!2scl" width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div> 
+
+                <div class="card-content">
+
+                  
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner-little">
+                  <img src="./assets/images/Tour_SEC copy.jpg" width="202" height="162" loading="lazy"
+                    alt="Godaddy user flow solution for every individual" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="https://seas.harvard.edu/tour/allston/1/science-and-engineering-complex-sec" class="tag">For lectures and workshops</a>
+
+              
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="https://seas.harvard.edu/tour/allston/1/science-and-engineering-complex-sec" class="card-title">Science and Engineering Complex (SEC)</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner-little">
+                  <img src="./assets/images/Walking.png" width="202" height="162" loading="lazy"
+                    alt="How to gain pro experience ar figma update version" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="https://seas.harvard.edu/about-us/our-campus/allston/transportation/pedestrian-transportation" class="tag">Getting to know your surroundings</a>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="https://seas.harvard.edu/about-us/our-campus/allston/transportation/pedestrian-transportation" class="card-title">Pedestrian transportation</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner-little">
+                  <img src="./assets/images/felipes.jpg" width="202" height="162"loading="lazy"
+                    alt="Business solution for every individual" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <div class="wrapper">
+                    <a href="https://www.felipesboston.com/" class="tag">Best Mexican food in Boston</a>
+
+               
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="https://www.felipesboston.com/" class="card-title">Felipe's restaurant</a>
+                  </h3>
+
+                </div>
+
+              </div>
+            </li>
+
+            
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn has-after active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
 </html>
