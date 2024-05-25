@@ -7,8 +7,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Harvard-MACI Internship</title>
 
-    <link rel="shortcut icon" href="/assets/images/escudoof.gif"  >
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="https://es.m.wikipedia.org/wiki/Archivo:Escudo_de_la_Universidad_de_Concepci%C3%B3n.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/images/escudoof.gif"  >
 
+  <!-- 
+    - custom css link
+  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
@@ -17,7 +24,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
 
 </head>
 
@@ -64,6 +77,9 @@
            <li class="navbar-item">
             <a href="#location" class="navbar-link" data-nav-link>Location</a>
           </li>
+          <li class="navbar-item">
+            <a href="#usefulinfo" class="navbar-link" data-nav-link>Recommendations</a>
+          </li>
 
         </ul>
 
@@ -101,14 +117,14 @@
 
 
             <h1 class="h1 hero-title">
-              Harvard IACS <span class="has-before">Internship</span> 2024
+              Harvard SEAS <span class="has-before">Internship</span> 2024
             </h1>
 
-            <p class="hero-text text-container-ex">This one-week data science program includes theoretical classes, practical workshops, talks, and company visits. Experience top-tier education and real-world application at one of the world's leading institutions.
+            <p class="hero-text text-container-ex">This one-week data science program includes theoretical classes, practical workshops, tech-talks, and company visits. Experience top-tier education and real-world application at one of the world's leading institutions.
             </p>
 
             <div class="container">
-              <a href="#" class="btn btn-primary has-before has-after">Schedule 🗓️</a>
+              <a href="https://docs.google.com/spreadsheets/d/1jqpOUcpjp30se4FUAav19DbAr8SuC3nYFpg-bhtMO-0/edit#gid=0" class="btn btn-primary has-before has-after">Schedule 🗓️</a>
 
              <!-- <button class="hero-btn" aria-label="pixology promo">
                 <ion-icon name="play-outline" aria-hidden="true"></ion-icon>
@@ -173,7 +189,7 @@
               <p class="text-blk position">
               </p>
               <p class="text-blk feature-text">
-                Scientific Director of the Institute for Applied Computational Science
+                Scientific Director of the Institute for Applied Computational Science (SEAS), Harvard University
               </p>
             </a>
           </div>
@@ -188,7 +204,7 @@
               <p class="text-blk position">
               </p>
               <p class="text-blk feature-text">
-                Founder and Director of the Artificial Intelligence Data Center, University of Concepción
+                Founder and Director of the Artificial Intelligence Data Center (CDIA), University of Concepción
               </p>
  
             </a>
@@ -211,7 +227,7 @@
             </a>
           </div>
           <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 card-container">
-            <a class="card" href="https://fi.udec.cl/academicos/guillermo-cabrera-v/">
+            <a class="card" href="">
               <div class="team-image-wrapper">
                 <img class="team-member-image" src="./assets/images/mati_r.jpeg">
               </div>
@@ -221,7 +237,7 @@
               <p class="text-blk position">
               </p>
               <p class="text-blk feature-text">
-                Ask matias *
+                Program Coordinator (CDIA), Management Engineer
               </p>
  
             </a>
@@ -815,6 +831,30 @@
 
         </div>
       </section>
+
+      <section class="section newsletter has-bg-image" aria-label="newsletter" id="usefulinfo">
+        <div class="container">
+            <div class="newsletter-content">
+                <p class="section-subtitle has-before">Our recommendations 🤖</p>
+                <h2 class="h2 section-title-car active" href="https://maps.app.goo.gl/fqBjKEJ2YsuGfiX69"  data-desc="Description for Image 1">Have lunch in Spangler Center, Harvard Business School (HBS) </h2>
+                <h2 class="h2 section-title-car" data-desc="Description for Image 2">Buy souvenirs in   <span class="has-before">The Harvard Shop</span></h2>
+                <h2 class="h2 section-title-car" data-desc="Description for Image 3">WORK IN PROGRESS!!!</h2>
+            </div> <!-- Faltaba cerrar este div aquí -->
+
+            <figure class="newsletter-banner">
+                <div class="carousel">
+                    <div class="carousel-images">
+                        <img  src="./assets/images/sprangler.jpg"alt="Image 1" class="carousel-image active">
+                        <img src="./assets/images/harvardshop.jpg" alt="Image 2" class="carousel-image">
+                        <img src="./assets/images/engineering.jpg" alt="Image 3" class="carousel-image">
+                    </div>
+
+                    <button class="prev"><i class="fas fa-arrow-left"></i></button>
+                    <button class="next"><i class="fas fa-arrow-right"></i></button>
+                </div>
+            </figure>
+        </div>
+    </section>
 
     </article>
   </main>
