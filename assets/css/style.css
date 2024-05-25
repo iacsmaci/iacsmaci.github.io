@@ -739,10 +739,10 @@ body {
 
 .newsletter-banner { max-width: max-content; }
 
-.newsletter .section-subtitle { color: var(--light-gray); }
+.newsletter .section-subtitle { color: var(--slate-gray); }
 
 .newsletter .section-title {
-  color: var(--white);
+  color: var(--jet);
   margin-block: 20px 35px;
 }
 
@@ -1987,4 +1987,67 @@ body {
   background-color: #f8f8f8; /* Lighter color for the background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for 3D effect */
   transition: all 0.3s ease-in-out;
+}
+
+.carousel {
+  position: relative;
+  width: 100%; /* Ajusta esto según el ancho deseado del carrusel */
+  max-width: 600px; /* o el máximo que prefieras */
+  margin: auto; /* Centra el carrusel horizontalmente */
+  overflow: hidden; /* Oculta las imágenes que desbordan el área visible del carrusel */
+}
+
+/* Estilización de las imágenes dentro del carrusel */
+.carousel-images img {
+  width: 100%; /* Las imágenes ocupan todo el ancho del carrusel */
+  display: none; /* Oculta todas las imágenes por defecto */
+  transition: opacity 0.5s ease; /* Transición suave para el efecto de desvanecimiento */
+  border-radius: 20px; /* Aumenta el borde redondeado */
+}
+
+
+.carousel-image.active {
+  display: block; /* Solo muestra la imagen activa */
+  opacity: 1; /* Asegura que la imagen activa es totalmente visible */
+}
+
+/* Botones de navegación Prev y Next */
+.carousel button {
+  position: absolute;
+  top: 50%; /* Centra los botones verticalmente */
+  transform: translateY(-50%); /* Alineación precisa en el centro */
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  border-radius: 20px; /* Aumenta el borde redondeado */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para los botones */
+  color: white; /* Color del texto o ícono del botón */
+  width: 40px; /* Ancho del botón */
+  height: 40px; /* Altura del botón */
+  justify-content: center; /* Centra el contenido del botón horizontalmente */
+  align-items: center; /* Centra el contenido del botón verticalmente */
+  display: flex;
+}
+
+/* Íconos de los botones, puedes usar Font Awesome o texto simple */
+.carousel .prev {
+  left: 10px; /* Posiciona el botón Prev hacia la izquierda */
+}
+
+.carousel .next {
+  right: 10px; /* Posiciona el botón Next hacia la derecha */
+}
+
+.carousel button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Oscurece el botón al pasar el mouse */
+}
+
+.section-title-car {
+  display: none; /* Hide all descriptions initially */
+  margin-block: 30px 50px;
+}
+
+.section-title-car.active {
+  display: block; /* Show only the active description */
 }
