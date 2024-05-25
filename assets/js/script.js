@@ -77,3 +77,26 @@ const headerActive = function () {
 }
 
 addEventOnElem(window, "scroll", headerActive);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  let currentIndex = 0;
+  const images = document.querySelectorAll('.carousel-image');
+  const descriptions = document.querySelectorAll('.section-title-car');
+
+  document.querySelector('.prev').addEventListener('click', function() {
+      changeSlide(-1);
+  });
+
+  document.querySelector('.next').addEventListener('click', function() {
+      changeSlide(1);
+  });
+
+  function changeSlide(step) {
+      images[currentIndex].classList.remove('active');
+      descriptions[currentIndex].classList.remove('active');
+      currentIndex = (currentIndex + step + images.length) % images.length;
+      images[currentIndex].classList.add('active');
+      descriptions[currentIndex].classList.add('active');
+  }
+});
